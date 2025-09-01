@@ -25,27 +25,26 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Home Page'),
         centerTitle: true,
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 80, 2, 104),
       ),
       body: Center(
-        child: Text(
-          'This is a static Home Page',
-
-          style: TextStyle(
-            fontSize: 24,
-            color: Colors.green,
-          ),
-        ),
+          child: Image(
+          image: AssetImage('assets/obito.jpeg'),
+          width: 100,
+          height: 100,
+          fit: BoxFit.cover,
+  
+     ),
       ),
+
       bottomNavigationBar: BottomAppBar(
-        color: Colors.blue,
+        color: Color.fromARGB(255, 80, 2, 104),
         child: Padding(
           padding: EdgeInsets.all(16.0),
           child: Text(
             'Static Footer Text',
             style: TextStyle(
-              color: Colors.white,
-              
+            color: Colors.white,
             ),
           ),
         ),
