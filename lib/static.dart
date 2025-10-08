@@ -28,13 +28,60 @@ class HomePage extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 80, 2, 104),
       ),
       body: Center(
-          child: Image(
-          image: AssetImage('assets/obito.jpeg'),
-          width: 100,
-          height: 100,
-          fit: BoxFit.cover,
-  
-     ),
+          child: Column (
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(children: [
+                Image(
+                    image: AssetImage('assets/obito.jpeg'),
+                    width: 325,
+                    height: 325,
+                    fit: BoxFit.cover,
+                    ),
+                    Image(
+                    image: AssetImage('assets/obito.jpeg'),
+                    width: 275,
+                    height: 275,
+                    fit: BoxFit.cover,
+                  ),
+                  Image(
+                  image: AssetImage('assets/obito.jpeg'),
+                  width: 225,
+                  height: 225,
+                  fit: BoxFit.cover,
+                  ),
+                  Image(
+                  image: AssetImage('assets/obito.jpeg'),
+                  width: 175,
+                  height: 175,
+                  fit: BoxFit.cover,
+                  ),
+                  Image(
+                    image: AssetImage('assets/obito.jpeg'),
+                    width: 125,
+                    height: 125,
+                    fit: BoxFit.cover,
+                    ),
+                    Image(
+                    image: AssetImage('assets/obito.jpeg'),
+                    width: 75,
+                    height: 75,
+                    fit: BoxFit.cover,
+                  ),
+              ],),
+              Column(
+                children: [
+                  Row(
+                    children: [
+                    
+                    ],
+                  
+                  ),
+                ],
+              ),
+            ]
+          )
+          
       ),
 
       bottomNavigationBar: BottomAppBar(
